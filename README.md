@@ -62,10 +62,6 @@ Output saved in `output/` as JSON.
 
 ---
 
-**🌐 Run with Flask API:**  
-Start server: `python app.py`  
-Send a request:  
-`curl -X POST http://localhost:5000/extract -F "pdf=@input/sample.pdf"`
 
 **Example Response:**  
 {
