@@ -1,0 +1,3065 @@
+{
+  "title": "DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING",
+  "outline": [
+    {
+      "level": "H3",
+      "text": "Computer Networks Lab",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "ICS 653",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "BACHELOR OF TECHNOLOGY",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "COMPUTER SCIENCE AND ENGINEERING",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Submitted By:",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "MOHD TAHA KHAN 2200520100037",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Under the guidance of",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Abhishek Singh",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Lucknow, Uttar Pradesh",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "TABLE OF CONTENT",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "S.No.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Topic",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "C programming.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "using TCP.",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Pg.No.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "1-4",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "5-8",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "9-12",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "13-15",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "16-17",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "18-20",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "21-25",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "26-30",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "31-34",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "35-36",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "37-40",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "41-46",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Practical No: 1",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "Aim:",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "NS Overview:",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "NS Functionalities:",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "Detection).",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Wireless Networking:",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Tracing and Visualization:",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Uses of Network Simulators:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "  Packet Loss:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "  Throughput:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "  Delay:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "  Queue Length:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "Algorithm:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "Program:",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set ns [new Simulator]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "$ns trace-all $nr",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set nf [open thro.nam w]",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "$ns namtrace-all $nf",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "proc finish {} {",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "global ns nr nf",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "$ns flush-trace",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "close $nf",
+      "page": 5
+    },
+    {
+      "level": "H2",
+      "text": "close $nr",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "exec nam thro.nam &",
+      "page": 5
+    },
+    {
+      "level": "H2",
+      "text": "exit 0",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set n0 [$ns node]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set n1 [$ns node]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set n2 [$ns node]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set n3 [$ns node]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set n4 [$ns node]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set n5 [$ns node]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set n6 [$ns node]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set n7 [$ns node]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set udp0 [new Agent/UDP]",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "$cbr0 attach-agent $udp0",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "set udp1 [new Agent/UDP]",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "$cbr1 set interval_ 0.005",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "$cbr1 attach-agent $udp1",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "set null1 [new Agent/Null]",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "$ns attach-agent $n6 $null1",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "$ns connect $udp1 $null1",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "$ns run",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "5. Output and Result",
+      "page": 6
+    },
+    {
+      "level": "H2",
+      "text": "Result:",
+      "page": 6
+    },
+    {
+      "level": "H2",
+      "text": "6. Conclusion",
+      "page": 6
+    },
+    {
+      "level": "H2",
+      "text": "Practical No: 2",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "Aim:",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "OMNeT++, NS2, NS3, etc.",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "1.  Cisco Packet Tracer",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "2.  NetSim",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "3.  OMNeT++",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "2.1 Cisco Packet Tracer",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "  Use Cases:",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "2.2 NetSim",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "  Use Cases:",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "2.3 OMNeT++",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "  Use Cases:",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "  Use Cases:",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "2.5 NS3 (Network Simulator 3)",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "  Use Cases:",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "3.1 Cisco Packet Tracer",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Steps to Configure:",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "3.2 NetSim",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "Steps to Configure:",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "3.3 OMNeT++",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "Steps to Configure:",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "3.4 NS2",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Steps to Configure:",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "3.5 NS3",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Steps to Configure:",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Tool",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Low",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Cisco-specific",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Education, small networks",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "NetSim",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "OMNeT++",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Medium",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "High",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Wide range",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Low",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Medium  Wide range",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Medium",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "High",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Wide range",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "NS2",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "NS3",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "5. Conclusion",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Practical No: 3",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "Aim:",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "1.  RJ-45 Connector",
+      "page": 11
+    },
+    {
+      "level": "H3",
+      "text": "2.  CAT-6 Cable",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "3.  Crimping Tool",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "4.  Cable Tester",
+      "page": 11
+    },
+    {
+      "level": "H3",
+      "text": "2.1 RJ-45 Connector",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "  Use Cases:",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "2.2 CAT-6 Cable",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "  Use Cases:",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "2.3 Crimping Tool",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "o  Designed to crimp RJ-45",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "  Use Cases:",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "2.4 Cable Tester",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "Features:",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "  Use Cases:",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "2.  Strip the Cable:",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "  Pin 2: Orange",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "  Pin 3: Green/White",
+      "page": 13
+    },
+    {
+      "level": "H2",
+      "text": "  Pin 4: Blue",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "  Pin 5: Blue/White",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "  Pin 6: Green",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "  Pin 7: Brown/White",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "  Pin 8: Brown",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "4.  Trim the Wires:",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "2.  Crimp the Connector:",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "3.3 Testing the Cable",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "2.  Test the Cable:",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "4. Wiring Standards: T568A vs. T568B",
+      "page": 14
+    },
+    {
+      "level": "H2",
+      "text": "  T568A:",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 1: Green/White",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 2: Green",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 3: Orange/White",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 4: Blue",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 5: Blue/White",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 6: Orange",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 7: Brown/White",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 8: Brown",
+      "page": 14
+    },
+    {
+      "level": "H2",
+      "text": "  T568B:",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 1: Orange/White",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 2: Orange",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 3: Green/White",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 4: Blue",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 5: Blue/White",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 6: Green",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 7: Brown/White",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "o  Pin 8: Brown",
+      "page": 14
+    },
+    {
+      "level": "H1",
+      "text": "5. Safety Precautions",
+      "page": 14
+    },
+    {
+      "level": "H2",
+      "text": "6. Conclusion",
+      "page": 14
+    },
+    {
+      "level": "H2",
+      "text": "Practical No: 4",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "Aim:",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "1. Introduction",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "2. Algorithm",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "#include <stdio.h>",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "void stopAndWait() {",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "int frames, i;",
+      "page": 15
+    },
+    {
+      "level": "H3",
+      "text": "scanf(\"%d\", &frames);",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "int main() {",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "stopAndWait();",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "return 0;",
+      "page": 15
+    },
+    {
+      "level": "H3",
+      "text": "#include <stdio.h>",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "void slidingWindow() {",
+      "page": 16
+    },
+    {
+      "level": "H3",
+      "text": "int frames, i;",
+      "page": 16
+    },
+    {
+      "level": "H3",
+      "text": "scanf(\"%d\", &frames);",
+      "page": 16
+    },
+    {
+      "level": "H3",
+      "text": "printf(\"Waiting for Acknowledgment...\\n\");",
+      "page": 16
+    },
+    {
+      "level": "H3",
+      "text": "int main() {",
+      "page": 16
+    },
+    {
+      "level": "H3",
+      "text": "slidingWindow();",
+      "page": 16
+    },
+    {
+      "level": "H3",
+      "text": "return 0;",
+      "page": 16
+    },
+    {
+      "level": "H2",
+      "text": "4. Output",
+      "page": 16
+    },
+    {
+      "level": "H2",
+      "text": "5. Result",
+      "page": 17
+    },
+    {
+      "level": "H2",
+      "text": "6. Conclusion",
+      "page": 17
+    },
+    {
+      "level": "H2",
+      "text": "Aim:",
+      "page": 18
+    },
+    {
+      "level": "H2",
+      "text": "Algorithm:",
+      "page": 18
+    },
+    {
+      "level": "H2",
+      "text": "Client:",
+      "page": 18
+    },
+    {
+      "level": "H2",
+      "text": "Server:",
+      "page": 18
+    },
+    {
+      "level": "H2",
+      "text": "Program:",
+      "page": 18
+    },
+    {
+      "level": "H2",
+      "text": "Client Code:",
+      "page": 18
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 18
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 18
+    },
+    {
+      "level": "H3",
+      "text": "class Clientarp {",
+      "page": 18
+    },
+    {
+      "level": "H2",
+      "text": "try {",
+      "page": 18
+    },
+    {
+      "level": "H3",
+      "text": "InputStreamReader(System.in));",
+      "page": 18
+    },
+    {
+      "level": "H2",
+      "text": "clsct.close();",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "} catch (Exception e) {",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "System.out.println(e);",
+      "page": 18
+    },
+    {
+      "level": "H2",
+      "text": "Server Code:",
+      "page": 18
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "import.util.*;",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "class Serverarp {",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "try {",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(\"Client connected.\");",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "DataInputStream din = new",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "DataInputStream(clientSocket.getInputStream());",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "DataOutputStream(clientSocket.getOutputStream());",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "arpTable.put(\"192.168.1.1\", \"00-1A-2B-3C-4D-5E\");",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "arpTable.put(\"192.168.1.2\", \"00-1A-2B-3C-4D-5F\");",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "arpTable.put(\"192.168.1.3\", \"00-1A-2B-3C-4D-60\");",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "found\");",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "dout.writeBytes(macAddress + '\\n');",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "clientSocket.close();",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "serverSocket.close();",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "} catch (Exception e) {",
+      "page": 19
+    },
+    {
+      "level": "H1",
+      "text": "System.out.println(e);",
+      "page": 19
+    },
+    {
+      "level": "H2",
+      "text": "Output:",
+      "page": 19
+    },
+    {
+      "level": "H2",
+      "text": "Client Output:",
+      "page": 19
+    },
+    {
+      "level": "H2",
+      "text": "Server Output:",
+      "page": 19
+    },
+    {
+      "level": "H2",
+      "text": "Conclusion:",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "ALGORITHM:",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "PING:",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "3.  Get the IP address.",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "TRACEROUTE:",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "3.  Get the IP address.",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "Code:",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "PING:",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.BufferedReader;",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.IOException;",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.InputStreamReader;",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "public class PingTest {",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "if (args.length == 0) {",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "return;",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "\" + ipAddress;",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "try {",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "String inputLine;",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(inputLine);",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "in.close();",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "TRACEROUTE:",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "7.  import java.io.IOException;",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "8.  import java.io.InputStreamReader;",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "10. public class PingTest {",
+      "page": 21
+    },
+    {
+      "level": "H1",
+      "text": "14.             return;",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "15.         }",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "\"ping -c 4 \" + ipAddress;",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "21.         try {",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "InputStreamReader(p.getInputStream()));",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "25.             String inputLine;",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "28.             }",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "29.             in.close();",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "e.getMessage());",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "32.         }",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "33.     }",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "34. }",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "Output:",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "PING:",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "TRACEROUTE:",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "Conclusion:",
+      "page": 22
+    },
+    {
+      "level": "H2",
+      "text": "Practical No. 7:",
+      "page": 23
+    },
+    {
+      "level": "H2",
+      "text": "Theory:",
+      "page": 23
+    },
+    {
+      "level": "H2",
+      "text": "1. Ping",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Ping Command Syntax:",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "p] [-4] [-6] target [/?]",
+      "page": 23
+    },
+    {
+      "level": "H2",
+      "text": "Example :",
+      "page": 24
+    },
+    {
+      "level": "H3",
+      "text": "ping computerhope.com",
+      "page": 24
+    },
+    {
+      "level": "H3",
+      "text": "ping 192.168.2.1",
+      "page": 24
+    },
+    {
+      "level": "H2",
+      "text": "2. Traceroute",
+      "page": 24
+    },
+    {
+      "level": "H1",
+      "text": "Tracert Command Syntax:",
+      "page": 24
+    },
+    {
+      "level": "H2",
+      "text": "Example:",
+      "page": 24
+    },
+    {
+      "level": "H2",
+      "text": "tracert 192.168.1.1",
+      "page": 24
+    },
+    {
+      "level": "H1",
+      "text": "tracert www.google.com",
+      "page": 25
+    },
+    {
+      "level": "H2",
+      "text": "3. Nslookup",
+      "page": 25
+    },
+    {
+      "level": "H1",
+      "text": "Nslookup Command Syntax:",
+      "page": 25
+    },
+    {
+      "level": "H3",
+      "text": "ARP Command Syntax:",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "ARP -s inet_addr eth_adr",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "[if_addr]",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "ARP -d inet_addr [if_addr]",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "ARP -a [inet_addr] [-N",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "if_addr]",
+      "page": 26
+    },
+    {
+      "level": "H2",
+      "text": "Example:",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "arp -a",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "arp -s 220.0.0.161 00-50-",
+      "page": 26
+    },
+    {
+      "level": "H2",
+      "text": "04-62-F7-23",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "5.  TelNet",
+      "page": 26
+    },
+    {
+      "level": "H1",
+      "text": "Telnet Command Syntax:",
+      "page": 26
+    },
+    {
+      "level": "H2",
+      "text": "[/f <FileName>] [/l",
+      "page": 26
+    },
+    {
+      "level": "H2",
+      "text": "[<Port>]] [/?]",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "Example: open ftp.example.com",
+      "page": 27
+    },
+    {
+      "level": "H2",
+      "text": "Requirements:",
+      "page": 28
+    },
+    {
+      "level": "H2",
+      "text": "Theory:",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "1.  Link State Routing:",
+      "page": 28
+    },
+    {
+      "level": "H3",
+      "text": "map of the entire",
+      "page": 28
+    },
+    {
+      "level": "H3",
+      "text": "o  Advantages: Fast",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "convergence, efficient",
+      "page": 28
+    },
+    {
+      "level": "H3",
+      "text": "use of network",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "o  Disadvantages: High",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "memory and processing",
+      "page": 28
+    },
+    {
+      "level": "H2",
+      "text": "2.  Flooding:",
+      "page": 28
+    },
+    {
+      "level": "H3",
+      "text": "o  A simple routing",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "technique where every",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "incoming packet is sent",
+      "page": 28
+    },
+    {
+      "level": "H3",
+      "text": "out on every outgoing",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "line except the one it",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "complex routing tables,",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "robust in case of node",
+      "page": 28
+    },
+    {
+      "level": "H3",
+      "text": "table with its neighbors",
+      "page": 29
+    },
+    {
+      "level": "H3",
+      "text": "o  Advantages: Simple to",
+      "page": 29
+    },
+    {
+      "level": "H1",
+      "text": "o  Disadvantages: Slow",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "Network Topology:",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "Copy",
+      "page": 29
+    },
+    {
+      "level": "H3",
+      "text": "|              |              |",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "Simulation Setup:",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "Java Implementation:",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "import java.util.*;",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "class Node {",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "int id;",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "Node(int id) {",
+      "page": 29
+    },
+    {
+      "level": "H3",
+      "text": "this.id = id;",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "neighbors.put(node, cost);",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "PriorityQueue<>(Comparator.comparingInt(distances::get));",
+      "page": 30
+    },
+    {
+      "level": "H1",
+      "text": "distances.put(start, 0);",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "queue.add(start);",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "while (!queue.isEmpty()) {",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "if (newDistance < distances.getOrDefault(next, Integer.MAX_VALUE))",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "distances.put(next, newDistance);",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "queue.add(next);",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "entry.getValue());",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "Node n1 = new Node(1);",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "Node n2 = new Node(2);",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "Node n3 = new Node(3);",
+      "page": 30
+    },
+    {
+      "level": "H1",
+      "text": "n1.addNeighbor(n2, 2);",
+      "page": 30
+    },
+    {
+      "level": "H1",
+      "text": "n2.addNeighbor(n3, 3);",
+      "page": 30
+    },
+    {
+      "level": "H1",
+      "text": "n1.addNeighbor(n3, 10);",
+      "page": 30
+    },
+    {
+      "level": "H2",
+      "text": "import java.util.*;",
+      "page": 30
+    },
+    {
+      "level": "H2",
+      "text": "class Node {",
+      "page": 30
+    },
+    {
+      "level": "H2",
+      "text": "int id;",
+      "page": 30
+    },
+    {
+      "level": "H2",
+      "text": "Node(int id) {",
+      "page": 30
+    },
+    {
+      "level": "H2",
+      "text": "this.id = id;",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "neighbors.put(node, cost);",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "for (Node node : nodes) {",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "distances.put(node, Integer.MAX_VALUE);",
+      "page": 31
+    },
+    {
+      "level": "H1",
+      "text": "distances.put(start, 0);",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "for (Node node : nodes) {",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "distances.put(next, newDistance);",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "entry.getValue());",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "Node n1 = new Node(1);",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "Node n2 = new Node(2);",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "Node n3 = new Node(3);",
+      "page": 31
+    },
+    {
+      "level": "H1",
+      "text": "n1.addNeighbor(n2, 2);",
+      "page": 31
+    },
+    {
+      "level": "H1",
+      "text": "n2.addNeighbor(n3, 3);",
+      "page": 31
+    },
+    {
+      "level": "H1",
+      "text": "n1.addNeighbor(n3, 10);",
+      "page": 31
+    },
+    {
+      "level": "H2",
+      "text": "Execution Steps:",
+      "page": 31
+    },
+    {
+      "level": "H2",
+      "text": "5.  Analyze Results:",
+      "page": 32
+    },
+    {
+      "level": "H2",
+      "text": "Observations:",
+      "page": 32
+    },
+    {
+      "level": "H1",
+      "text": "Link State Routing:",
+      "page": 32
+    },
+    {
+      "level": "H2",
+      "text": "Flooding:",
+      "page": 32
+    },
+    {
+      "level": "H2",
+      "text": "Conclusion:",
+      "page": 32
+    },
+    {
+      "level": "H2",
+      "text": "Practical No. 9",
+      "page": 33
+    },
+    {
+      "level": "H3",
+      "text": "AIM:",
+      "page": 33
+    },
+    {
+      "level": "H3",
+      "text": "connectionless (UDP) communication.",
+      "page": 33
+    },
+    {
+      "level": "H3",
+      "text": "ALGORITHM:",
+      "page": 33
+    },
+    {
+      "level": "H3",
+      "text": "TCP Implementation:",
+      "page": 33
+    },
+    {
+      "level": "H2",
+      "text": "Server:",
+      "page": 33
+    },
+    {
+      "level": "H2",
+      "text": "Client:",
+      "page": 33
+    },
+    {
+      "level": "H2",
+      "text": "UDP Implementation:",
+      "page": 33
+    },
+    {
+      "level": "H2",
+      "text": "Server:",
+      "page": 33
+    },
+    {
+      "level": "H2",
+      "text": "Client:",
+      "page": 33
+    },
+    {
+      "level": "H3",
+      "text": "PROGRAM:",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "TCPDateClient.java",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "public class TCPDateClient {",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "try {",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "new InputStreamReader(socket.getInputStream()));",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "out.println(InetAddress.getLocalHost().getHostAddress());",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "socket.close();",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "} catch (Exception e) {",
+      "page": 34
+    },
+    {
+      "level": "H2",
+      "text": "TCPDateServer.java",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 34
+    },
+    {
+      "level": "H1",
+      "text": "import java.util.Date;",
+      "page": 34
+    },
+    {
+      "level": "H2",
+      "text": "try {",
+      "page": 34
+    },
+    {
+      "level": "H2",
+      "text": "while (true) {",
+      "page": 34
+    },
+    {
+      "level": "H1",
+      "text": "// Send date to client",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "out.println(new Date().toString());",
+      "page": 34
+    },
+    {
+      "level": "H2",
+      "text": "client.close();",
+      "page": 34
+    },
+    {
+      "level": "H1",
+      "text": "} catch (Exception e) {",
+      "page": 34
+    },
+    {
+      "level": "H3",
+      "text": "UDPDateClient.java",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "public class UDPDateClient {",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "try {",
+      "page": 35
+    },
+    {
+      "level": "H1",
+      "text": "socket.send(sendPacket);",
+      "page": 35
+    },
+    {
+      "level": "H1",
+      "text": "// Receive response",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "receiveData, receiveData.length);",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "socket.receive(receivePacket);",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "socket.close();",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "} catch (Exception e) {",
+      "page": 35
+    },
+    {
+      "level": "H2",
+      "text": "UDPDateServer.java",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 35
+    },
+    {
+      "level": "H1",
+      "text": "import java.util.Date;",
+      "page": 35
+    },
+    {
+      "level": "H2",
+      "text": "try {",
+      "page": 35
+    },
+    {
+      "level": "H2",
+      "text": "while (true) {",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "receiveData, receiveData.length);",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "socket.receive(receivePacket);",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "// Get client info",
+      "page": 35
+    },
+    {
+      "level": "H2",
+      "text": "// Prepare response",
+      "page": 35
+    },
+    {
+      "level": "H2",
+      "text": "// Send response",
+      "page": 35
+    },
+    {
+      "level": "H1",
+      "text": "socket.send(sendPacket);",
+      "page": 35
+    },
+    {
+      "level": "H1",
+      "text": "} catch (Exception e) {",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "OUTPUT:",
+      "page": 36
+    },
+    {
+      "level": "H3",
+      "text": "TCP Implementation:",
+      "page": 36
+    },
+    {
+      "level": "H2",
+      "text": "Server Side:",
+      "page": 36
+    },
+    {
+      "level": "H2",
+      "text": "Client Side:",
+      "page": 36
+    },
+    {
+      "level": "H3",
+      "text": "UDP Implementation:",
+      "page": 36
+    },
+    {
+      "level": "H2",
+      "text": "Server Side:",
+      "page": 36
+    },
+    {
+      "level": "H2",
+      "text": "Client Side:",
+      "page": 36
+    },
+    {
+      "level": "H2",
+      "text": "RESULT:",
+      "page": 36
+    },
+    {
+      "level": "H2",
+      "text": "Practical No. 10",
+      "page": 37
+    },
+    {
+      "level": "H2",
+      "text": "Objective:",
+      "page": 37
+    },
+    {
+      "level": "H2",
+      "text": "Brief Theory:-",
+      "page": 37
+    },
+    {
+      "level": "H3",
+      "text": "more than two devices",
+      "page": 37
+    },
+    {
+      "level": "H3",
+      "text": "according to the IEEE",
+      "page": 37
+    },
+    {
+      "level": "H2",
+      "text": "data packets",
+      "page": 37
+    },
+    {
+      "level": "H2",
+      "text": "Result-",
+      "page": 38
+    },
+    {
+      "level": "H2",
+      "text": "Practical No: 11",
+      "page": 39
+    },
+    {
+      "level": "H3",
+      "text": "Implementation of Subnetting",
+      "page": 39
+    },
+    {
+      "level": "H3",
+      "text": "AIM:",
+      "page": 39
+    },
+    {
+      "level": "H3",
+      "text": "THEORY:",
+      "page": 39
+    },
+    {
+      "level": "H2",
+      "text": "Key Concepts:",
+      "page": 39
+    },
+    {
+      "level": "H3",
+      "text": "ALGORITHM:",
+      "page": 39
+    },
+    {
+      "level": "H2",
+      "text": "Input:",
+      "page": 39
+    },
+    {
+      "level": "H2",
+      "text": "2.  Steps:",
+      "page": 39
+    },
+    {
+      "level": "H2",
+      "text": "3.  Output:",
+      "page": 39
+    },
+    {
+      "level": "H2",
+      "text": "EXAMPLE CALCULATION:",
+      "page": 39
+    },
+    {
+      "level": "H2",
+      "text": "Given:",
+      "page": 39
+    },
+    {
+      "level": "H2",
+      "text": "Solution:",
+      "page": 39
+    },
+    {
+      "level": "H2",
+      "text": "Subnet",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "Network ID",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "Host Range",
+      "page": 40
+    },
+    {
+      "level": "H2",
+      "text": "Broadcast",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.0",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.1 – .62",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.63",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.64",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.65 – .126",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.127",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.128",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.129 – .190",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.191",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.192",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.193 – .254",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "192.168.1.255",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "PROGRAM",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "import java.util.Scanner;",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(\"SUBNETTING CALCULATOR\");",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "int cidr = sc.nextInt();",
+      "page": 40
+    },
+    {
+      "level": "H2",
+      "text": "sc.close();",
+      "page": 40
+    },
+    {
+      "level": "H2",
+      "text": "subnetsRequired) {",
+      "page": 40
+    },
+    {
+      "level": "H2",
+      "text": "Math.log(2));",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "if (newCidr > 30) {",
+      "page": 40
+    },
+    {
+      "level": "H2",
+      "text": "CIDR\");",
+      "page": 40
+    },
+    {
+      "level": "H2",
+      "text": "return;",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(\"\\nSUBNETTING DETAILS:\");",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(\"New CIDR: /\" + newCidr);",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(\"\\nSUBNET TABLE:\");",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "// Parse the IP address",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "int[] ip = new int[4];",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "ip[i] = Integer.parseInt(octets[i]);",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "// Print subnet details",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "\".\" + ip[3]);",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "\".\" + firstHost +",
+      "page": 41
+    },
+    {
+      "level": "H2",
+      "text": "lastHost);",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "\".\" + broadcast);",
+      "page": 41
+    },
+    {
+      "level": "H1",
+      "text": "ip[3] += increment;",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "if (ip[3] >= 256) {",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "ip[2] += ip[3] / 256;",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "ip[3] = ip[3] % 256;",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "if (ip[2] >= 256) {",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "ip[1] += ip[2] / 256;",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "ip[2] = ip[2] % 256;",
+      "page": 41
+    },
+    {
+      "level": "H2",
+      "text": "(mask & 0xFF);",
+      "page": 41
+    },
+    {
+      "level": "H2",
+      "text": "Output",
+      "page": 41
+    },
+    {
+      "level": "H2",
+      "text": "RESULT:",
+      "page": 42
+    },
+    {
+      "level": "H2",
+      "text": "Practical No: 12",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "AIM:",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "a) Echo client-server",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "b) Chat application",
+      "page": 43
+    },
+    {
+      "level": "H1",
+      "text": "c) File transfer system",
+      "page": 43
+    },
+    {
+      "level": "H1",
+      "text": "1. Echo Client-Server",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "Algorithm:",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "Server:",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "3.  Create I/O streams",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "Client:",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "1.  Connect to server",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "Program:",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "EchoServer.java",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "try {",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "catch (Exception err) {",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(err);",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "public void serve() {",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "try {",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "while (true) {",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "client.getOutputStream(), true);",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "String line;",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "do {",
+      "page": 43
+    },
+    {
+      "level": "H1",
+      "text": "line = r.readLine();",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "if (line != null) {",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "} while (!line.trim().equals(\"bye\"));",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "client.close();",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "catch (Exception err) {",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "System.err.println(err);",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "s.serve();",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "private ServerSocket server;",
+      "page": 44
+    },
+    {
+      "level": "H2",
+      "text": "EchoClient.java",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "public class EchoClient {",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "try {",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "new InputStreamReader(s.getInputStream()));",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "s.getOutputStream(), true);",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "new InputStreamReader(System.in));",
+      "page": 44
+    },
+    {
+      "level": "H2",
+      "text": "String line;",
+      "page": 44
+    },
+    {
+      "level": "H2",
+      "text": "do {",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "// Read server response",
+      "page": 44
+    },
+    {
+      "level": "H1",
+      "text": "line = r.readLine();",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "if (line != null)",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(line);",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "// Get user input",
+      "page": 44
+    },
+    {
+      "level": "H1",
+      "text": "line = con.readLine();",
+      "page": 44
+    },
+    {
+      "level": "H2",
+      "text": "w.println(line);",
+      "page": 44
+    },
+    {
+      "level": "H2",
+      "text": "s.close();",
+      "page": 44
+    },
+    {
+      "level": "H1",
+      "text": "catch (Exception err) {",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "System.err.println(err);",
+      "page": 44
+    },
+    {
+      "level": "H2",
+      "text": "OUTPUT:",
+      "page": 44
+    },
+    {
+      "level": "H2",
+      "text": "Server Side:",
+      "page": 44
+    },
+    {
+      "level": "H2",
+      "text": "Client Side:",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "2. Chat Application",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "Algorithm:",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "Server:",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "Client:",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "1.  Connect to server",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "Program:",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "ChatServer.java",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "import java.util.*;",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "public class ChatServer {",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "while (true) {",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "new ClientHandler(client).start();",
+      "page": 45
+    },
+    {
+      "level": "H1",
+      "text": "private Socket socket;",
+      "page": 45
+    },
+    {
+      "level": "H1",
+      "text": "private PrintWriter out;",
+      "page": 45
+    },
+    {
+      "level": "H1",
+      "text": "this.socket = socket;",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "public void run() {",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "try {",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "synchronized(clientWriters) {",
+      "page": 45
+    },
+    {
+      "level": "H1",
+      "text": "clientWriters.add(out);",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "String message;",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "broadcast(message);",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "} catch (IOException e) {",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "System.out.println(e);",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "} finally {",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "synchronized(clientWriters) {",
+      "page": 46
+    },
+    {
+      "level": "H1",
+      "text": "writer.println(message);",
+      "page": 46
+    },
+    {
+      "level": "H2",
+      "text": "ChatClient.java",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "import javax.swing.*;",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "public class ChatClient {",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "new Thread(() -> {",
+      "page": 46
+    },
+    {
+      "level": "H2",
+      "text": "String message;",
+      "page": 46
+    },
+    {
+      "level": "H2",
+      "text": "}).start();",
+      "page": 46
+    },
+    {
+      "level": "H2",
+      "text": "// Message sender",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "socket.getOutputStream(), true);",
+      "page": 46
+    },
+    {
+      "level": "H2",
+      "text": "String userInput;",
+      "page": 46
+    },
+    {
+      "level": "H1",
+      "text": "out.println(userInput);",
+      "page": 46
+    },
+    {
+      "level": "H2",
+      "text": "Output:",
+      "page": 46
+    },
+    {
+      "level": "H2",
+      "text": "3. File Transfer",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "Algorithm:",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "Server:",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "3.  Save received file",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "Client:",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "1.  Connect to server",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "Program:",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "FileServer.java",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "import java.net.*;",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "import java.io.*;",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "public class FileServer {",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "int bytesRead;",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "out.close();",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "socket.close();",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "FileClient.java",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "import java.net.*;",
+      "page": 47
+    },
+    {
+      "level": "H2",
+      "text": "import java.io.*;",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "int bytesRead;",
+      "page": 48
+    },
+    {
+      "level": "H3",
+      "text": "out.write(buffer, 0, bytesRead);",
+      "page": 48
+    },
+    {
+      "level": "H3",
+      "text": "fileIn.close();",
+      "page": 48
+    },
+    {
+      "level": "H3",
+      "text": "socket.close();",
+      "page": 48
+    },
+    {
+      "level": "H2",
+      "text": "Output:",
+      "page": 48
+    },
+    {
+      "level": "H3",
+      "text": "RESULT:",
+      "page": 48
+    }
+  ]
+}
