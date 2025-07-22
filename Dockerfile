@@ -8,6 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install required packages
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Create input/output folders (if not already created)

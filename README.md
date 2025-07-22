@@ -84,7 +84,9 @@ Send a request:
 FROM --platform=linux/amd64 python:3.10-slim
 WORKDIR /app
 COPY . .
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
+RUN mkdir -p input output
 CMD ["python", "main.py"]
 ```
 
@@ -100,12 +102,12 @@ CMD ["python", "main.py"]
 ---
 
 **📦 requirements.txt:**  
-scikit-learn==1.3.0  
-pdfminer.six==20221105  
-joblib==1.3.2  
-pandas==2.2.2  
-flask==2.3.2
-
+pdfminer.six==20221105
+joblib==1.3.2
+numpy>=1.26.0
+scikit-learn==1.3.2
+joblib==1.3.2
+pandas==2.2.2
 ---
 
 **🔒 Constraints Met:**  
