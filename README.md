@@ -97,13 +97,14 @@ CMD ["python", "main.py"]
 
 ---
 
-**📦 requirements.txt:**  
+**📦 requirements.txt:**
+```txt
 pdfminer.six==20221105
 joblib==1.3.2
 numpy>=1.26.0
 scikit-learn==1.3.2
-joblib==1.3.2
-pandas==2.2.2
+pandas==2.2.2 
+```
 ---
 
 **🔒 Constraints Met:**  
